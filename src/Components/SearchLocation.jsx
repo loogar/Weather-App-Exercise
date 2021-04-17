@@ -8,7 +8,7 @@ const SearchLocation = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setCity(cityRef.current.value);
+    setCity(cityRef.current.value); //mutate the value in current property.
     cityRef.current.value = null;
   };
 

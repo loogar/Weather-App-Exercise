@@ -4,4 +4,4 @@ export const getTemperature = (temperature, isMetric) => {
     : Math.round(temperature) + '\xB0F';
 };
 
-const convertToCelsius = (temperatureInF) => (temperatureInF - 32) / 1.8;
+const convertToCelsius = (temperatureInF) => (temperatureInF - 32) / 1.8; // converts temperature to celsius

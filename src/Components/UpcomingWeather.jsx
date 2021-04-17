@@ -47,7 +47,7 @@ const UpcomingWeather = ({location}) => {
                 </Grid>
                 <Grid container justify='space-evenly'>
                   {upcoming.list
-                    .filter((data, index) => index % 8 === 0)
+                    .filter((data, index) => index % 8 === 0) //filter through the list of date and return data for the each date
                     .map((data) => (
                       <Grid
                         item

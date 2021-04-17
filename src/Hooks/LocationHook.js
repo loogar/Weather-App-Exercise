@@ -10,7 +10,7 @@ export const useLocation = () => {
           latitude: data.coords.latitude,
           longitude: data.coords.longitude,
         };
-        setLocation(location);
+        setLocation(location); //gets the current location using geolocation
       });
     }
   }, []);

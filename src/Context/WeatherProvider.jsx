@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { WeatherContext } from "./Context";
+import React, {useState} from 'react';
+import {WeatherContext} from './Context';
 
-const WeatherProvider = ({ children }) => {
+const WeatherProvider = ({children}) => {
   const [isMetric, setIsMetric] = useState(false);
   const [city, setCity] = useState();
 
   return (
-    <WeatherContext.Provider value={{ isMetric, setIsMetric, city, setCity }}>
+    <WeatherContext.Provider value={{isMetric, setIsMetric, city, setCity}}>
       {children}
-    </WeatherContext.Provider>
+    </WeatherContext.Provider> // descendants of a Provider will re-render whenever the Provider’s value prop changes
   );
 };
 

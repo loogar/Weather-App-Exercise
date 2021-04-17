@@ -18,7 +18,7 @@ const TodayWeather = ({location}) => {
       api.apiKey
     }`,
     location
-  );
+  ); //get the data and url for the weather data
 
   if (isLoading) return <LinearProgress color='secondary' />;
 

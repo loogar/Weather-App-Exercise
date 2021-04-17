@@ -7,7 +7,7 @@ const CurrentTime = ({city}) => {
     new Date().toLocaleTimeString([], {
       hour: '2-digit',
       minute: '2-digit',
-    });
+    }); // getting local time on hh:mm format
   return (
     <Grid item>
       <Grid container spacing={1}>
